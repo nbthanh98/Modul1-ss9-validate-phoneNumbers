@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function validatePhoneNumbers(phoneNumbers) {
+            RegExp = /([0-9]{2})+(-[0-9]{10})$/;
+            if (RegExp.test(phoneNumbers)) {
+                console.log('hop le!');
+            } else {
+                console.log("khong hop le!")
+            }
+        }
+        let phoneNumbers = '84-0978489648';
+        validatePhoneNumbers(phoneNumbers);
+    </script>
+</body>
+
+</html>
